@@ -50,7 +50,7 @@ function setup(){
   
 createCanvas(windowWidth,windowHeight);
 // Moving background
-path=createSprite(width/20,150);
+path=createSprite(width/20,300);
 path.addImage(pathImg);
 path.velocityX = -10;
 
