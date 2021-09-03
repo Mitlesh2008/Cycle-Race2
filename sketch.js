@@ -96,7 +96,7 @@ function draw() {
    distance = distance + Math.round(getFrameRate()/50);
    path.velocityX = -(6 + 2*distance/150);
   
-   mainCyclist.y = World.mouseY;
+   mainCyclist.y = World.mouseY || touches;
 
    edges= createEdgeSprites();
    mainCyclist .collide(edges);
